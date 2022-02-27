@@ -2,7 +2,7 @@
 
 namespace Alura\Solid\Model;
 
-class Video
+class Video implements Assitivel
 {
     /** @var bool */
     protected $assistido = false;
@@ -32,4 +32,6 @@ class Video
     {
         return 'http://videos.alura.com.br/' . http_build_query(['nome' => $this->nome]);
     }
+
+
 }
